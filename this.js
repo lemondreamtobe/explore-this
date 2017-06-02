@@ -23,8 +23,9 @@ Lemontree.getObjectType(div);
 return typeArray[1].slice(0, this.length-1); 
 
 // this → object ：Lemontree
-// this.length = 0 
-// typeArray[1].slice(0, -1)  → ""
+// this.length = undefined 
+// this.length - 1 = NaN
+// typeArray[1].slice(0, NaN)  → ""
 
 getType(div); //HTMLDivElement
 return typeArray[1].slice(0, this.length-1); 
